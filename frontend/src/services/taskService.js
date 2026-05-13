@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/tasks';
+const API = import.meta.env.VITE_API_URL || 'https://acmeaitest.onrender.com/api/tasks';
 
 export const taskService = {
   async getTasks(filters = {}) {
