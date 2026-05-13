@@ -34,18 +34,18 @@ The application uses a containerized multi-service architecture:
 
 ```mermaid
 graph TD
-    Client((Client Browser))
+    Client(("Client Browser"))
     
     subgraph "Docker Host (docker-compose)"
-        Frontend[Frontend Service\n(Nginx serving React/Vite build)]
-        Backend[Backend Service\n(Node.js API Server on Port 5000)]
-        DB[(PostgreSQL Database\nPort 5432)]
+        Frontend["Frontend Service<br/>(Nginx serving React/Vite build)"]
+        Backend["Backend Service<br/>(Node.js API Server on Port 5000)"]
+        DB[("PostgreSQL Database<br/>Port 5432")]
     end
     
-    Client -->|HTTP Requests :80| Frontend
-    Frontend -.->|Client-side API Calls| Backend
-    Client -->|Direct API Calls| Backend
-    Backend -->|Prisma ORM| DB
+    Client -->|"HTTP Requests :80"| Frontend
+    Frontend -.->|"Client-side API Calls"| Backend
+    Client -->|"Direct API Calls"| Backend
+    Backend -->|"Prisma ORM"| DB
 ```
 
 ## Prerequisites
