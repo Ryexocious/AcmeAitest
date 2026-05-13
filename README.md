@@ -104,11 +104,18 @@ npm run dev
 ```
 
 **Frontend:**
-```bash
-cd frontend
-npm install
-npm run dev
-```
+
+1. Update the API endpoint in the code. Open `frontend/src/services/taskService.js` and change the `API` URL to point to your local server:
+   ```javascript
+   const API = 'http://localhost:5000/api/tasks';
+   // OR you can set the VITE_API_URL environment variable
+   ```
+2. Install dependencies and run the development server:
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
 
 ## Deployment
 
