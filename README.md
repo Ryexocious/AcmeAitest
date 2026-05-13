@@ -113,9 +113,8 @@ npm run dev
 ## Deployment
 
 The frontend of this application has also been deployed using **Vercel**. 
-
-- **Live URL**: [Add your Vercel deployment link here]
+The Backend of this application has also been deployed using **Render**. 
+- **Live URL**: [(https://acme-aitest.vercel.app/)]
 - **Vercel Configuration**: Vercel automatically detects the Vite framework and builds the app using `npm run build` and serves the `dist` directory.
 
-*(Make sure to update the live URL placeholder above with your actual Vercel project link).*
 
