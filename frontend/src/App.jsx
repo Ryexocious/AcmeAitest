@@ -170,7 +170,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="app-footer">
-        <p>Built with <span className="gradient-text">Task-Flow</span> • {new Date().getFullYear()}</p>
+        <p>Built by <span className="gradient-text">Jessan</span> • {new Date().getFullYear()}</p>
       </footer>
 
       {/* Modals */}
